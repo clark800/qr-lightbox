@@ -1,0 +1,35 @@
+
+.lightbox {
+    display: none;
+}
+
+.qr-lightbox {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: 0;
+}
+
+.qr-lightbox .qrcode {
+    padding-top: 50px;
+    width: 256px;
+    margin: 0 auto;
+}
+
+.qr-lightbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.qr-lightbox h4 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.qr-lightbox input {
+    width: 360px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
