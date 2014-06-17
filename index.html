@@ -5,24 +5,9 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="lib/qrcode.js"></script>
 <script src="lib/featherlight.js"></script>
+<script src="qrlightbox.js"></script>
 </head>
 <body>
-<a href="#" data-featherlight=".qr-lightbox">Bitcoin</a>
-
-<div class="lightbox qr-lightbox">
-<a href="bitcoin:1Do82XW4vK3wyVxFFSAhiGzn6dHTc68ouu" target="_blank">
-<div class="qrcode"></div>
-<h4>Bitcoin Address</h4>
-</a>
-<input class="address" value="1Do82XW4vK3wyVxFFSAhiGzn6dHTc68ouu" readonly />
-</div>
-
-<script type="text/javascript">
-$.featherlight.defaults.afterOpen = function() {
-    var qrcode = this.$instance.find('.qrcode').get(0);
-    new QRCode(qrcode, '1Do82XW4vK3wyVxFFSAhiGzn6dHTc68ouu');
-};
-</script>
-
+<a href="#" onclick="showQRLightbox('1Do82XW4vK3wyVxFFSAhiGzn6dHTc68ouu', 'Bitcoin Address', 'bitcoin')">Bitcoin</a>
 </body>
 </html>
